@@ -70,18 +70,18 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'https://diciembrejavruimun.herokuapp.com'
+BASEURL = 'https:/diciembrejavruimun.herokuapp.com'
 
 APIS = {
-    	'authentication': 'https://diciembrejavruimun.herokuapp.com', 
-    	'base': 'https://diciembrejavruimun.herokuapp.com',
-    	'booth': 'https://diciembrejavruimun.herokuapp.com',
-    	'census': 'https://diciembrejavruimun.herokuapp.com',
-    	'mixnet': 'https://diciembrejavruimun.herokuapp.com',
-   	    'postproc': 'https://diciembrejavruimun.herokuapp.com',
-    	'store': 'https://diciembrejavruimun.herokuapp.com',
-    	'visualizer': 'https://diciembrejavruimun.herokuapp.com',
-    	'voting': 'https://diciembrejavruimun.herokuapp.com',
+    	'authentication': 'https:/diciembrejavruimun.herokuapp.com', 
+    	'base': 'https:/diciembrejavruimun.herokuapp.com',
+    	'booth': 'https:/diciembrejavruimun.herokuapp.com',
+    	'census': 'https:/diciembrejavruimun.herokuapp.com',
+    	'mixnet': 'https:/diciembrejavruimun.herokuapp.com',
+   	    'postproc': 'https:/diciembrejavruimun.herokuapp.com',
+    	'store': 'https:/diciembrejavruimun.herokuapp.com',
+    	'visualizer': 'https:/diciembrejavruimun.herokuapp.com',
+    	'voting': 'https:/diciembrejavruimun.herokuapp.com',
 }
 
 
