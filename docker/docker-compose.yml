@@ -5,8 +5,6 @@ services:
     restart: always
     container_name: decide_db
     image: postgres:alpine
-    environment:
-      POSTGRES_HOST_AUTH_METHOD: "trust"
     volumes:
       - db:/var/lib/postgresql/data
     networks:
@@ -16,8 +14,7 @@ services:
     container_name: decide_web
     image: decide_web:latest
     build: .
-    #    command: ash -c "python manage.py migrate && gunicorn -w 5 decide.wsgi --timeout=500 -b 0.0.0.0:5000"
-        command: ash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:5000"
+    command: ash -c "python manage.py migrate && gunicorn -w 5 decide.wsgi --timeout=500 -b 0.0.0.0:5000"
     expose:
       - "5000"
     volumes:
