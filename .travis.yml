@@ -1,0 +1,27 @@
+dist: xenial
+
+services:
+  - postgresql
+addons:
+  postgresql: "9.4"
+language: python
+python:
+  - "3.6"
+notifications:
+  email:
+    - javruimun@alum.us.es
+before_install: 
+  - cd decide
+install:
+  - pip install -r requirements.txt
+script:
+  - cp local_settings.example.py local_settings.py
+  - psql -c "create user decide with password 'decide'"
+  - psql -c "create database decide owner decide"
+  - python manage.py migrate
+  - python manage.py test store
+deploy:
+  provider: heroku
+  app: diciembrejavruimun
+  strategy: git
+  
