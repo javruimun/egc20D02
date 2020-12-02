@@ -12,26 +12,27 @@ MODULES = [
     'visualizer',
     'voting',
 ]
-BASEURL = 'http://miapp.herokuapp.com'
+
+BASEURL = 'http://localhost:8000'
 
 APIS = {
-    'authentication': BASEURL,
-    'base': BASEURL,
-    'booth': BASEURL,
-    'census': BASEURL,
-    'mixnet': BASEURL,
-    'postproc': BASEURL,
-    'store': BASEURL,
-    'visualizer': BASEURL,
-    'voting': BASEURL,
+    'authentication': 'http://localhost:8000',
+    'base': 'http://localhost:8000',
+    'booth': 'http://localhost:8000',
+    'census': 'http://localhost:8000',
+    'mixnet': 'http://localhost:8000',
+    'postproc': 'http://localhost:8000',
+    'store': 'http://localhost:8000',
+    'visualizer': 'http://localhost:8000',
+    'voting': 'http://localhost:8000',
 }
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD':'nopassword',
+        'NAME': 'javruimundb',
+        'USER': 'javruimun',
+        'PASSWORD':'javruimun',
         'HOST': 'localhost',
         'PORT': 5432,
     }
